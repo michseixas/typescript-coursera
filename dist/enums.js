@@ -1,3 +1,4 @@
+"use strict";
 //give a more friendly name to a set of numeric values. Enum allows developers to define a set of named constants
 var Colors;
 (function (Colors) {
@@ -5,7 +6,7 @@ var Colors;
     Colors[Colors["BLUE"] = 1] = "BLUE";
     Colors[Colors["GREEN"] = 2] = "GREEN";
 })(Colors || (Colors = {}));
-var myColor = Colors.GREEN;
+let myColor = Colors.GREEN;
 //----
 var Days;
 (function (Days) {
@@ -17,7 +18,7 @@ var Days;
     Days[Days["SATURDAY"] = 5] = "SATURDAY";
     Days[Days["SUNDAY"] = 6] = "SUNDAY";
 })(Days || (Days = {}));
-var getDailyMessage = function (day) {
+const getDailyMessage = (day) => {
     switch (day) {
         case Days.MONDAY:
             return "Get a coffee e mãos à obra!";

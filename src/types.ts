@@ -14,7 +14,7 @@ let myAny: any = []
 console.log(myAny)
 
 let strArr: string[] = ["0", "hi", "42"]
-let numArr: number[] = ["22", "45", "42"]
+let numArr: number[] = [22, 45, 42]
 let boolArr: boolean[] = [true, false, true, false]
 
 console.log(strArr, numArr, boolArr)
